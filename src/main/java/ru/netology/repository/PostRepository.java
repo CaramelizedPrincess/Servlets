@@ -5,8 +5,8 @@ import ru.netology.model.Post;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
-
-
+import org.springframework.stereotype.Repository;
+@Repository
 public class PostRepository {
   private final AtomicLong userId;
   private final Map<Long, Post> listofPosts;
